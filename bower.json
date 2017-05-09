@@ -1,0 +1,17 @@
+{
+  "name": "project_demo",
+  "description": "\"project_demo\"",
+  "main": "index.js",
+  "authors": [
+    "wangluogang <461251455@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
