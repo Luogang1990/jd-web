@@ -1,9 +1,32 @@
 //Craeted by wrb 2017-05-11 12:05:07
-
-@topcolor: red;
-p{
-  color: @topcolor;
+body{
+  margin: 0px;
 }
-div{
-  color: @topcolor;
+
+#toolbar{
+  width: 100%;
+  height: 45px;
+  background-color: #eeeeee;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-image: url("../../img/toolbar-background.png");
+  #btn-back{
+    background-image: url("../../img/btn-back.png");
+    float: left;
+    height: 43px;
+    width: 50px;
+  }
+  #headline{
+    text-align: center;
+  }
+  #btn-menu{
+    background-image: url("../../img/btn-menu.png");
+    float: right;
+    height: 43px;
+    width: 50px;
+  }
+}
+
+.gradual(@color){
+  background-color: @color;
 }
