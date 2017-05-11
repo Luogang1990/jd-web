@@ -1,6 +1,26 @@
-p {
-  color: red;
+body {
+  margin: 0px;
 }
-div {
-  color: red;
+#toolbar {
+  width: 100%;
+  height: 45px;
+  background-color: #eeeeee;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-image: url("../../img/toolbar-background.png");
+}
+#toolbar #btn-back {
+  background-image: url("../../img/btn-back.png");
+  float: left;
+  height: 43px;
+  width: 50px;
+}
+#toolbar #headline {
+  text-align: center;
+}
+#toolbar #btn-menu {
+  background-image: url("../../img/btn-menu.png");
+  float: right;
+  height: 43px;
+  width: 50px;
 }
