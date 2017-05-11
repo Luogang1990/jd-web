@@ -1,3 +1,6 @@
-p {
+p:hover {
+  color: red;
+}
+div {
   color: red;
 }
