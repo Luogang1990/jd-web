@@ -1,63 +1,178 @@
-@all_width:100%;
-@all_height:100%;
-@base_color:white;
-body{
-  width:@all_width;
-  height: @all_height;
-  background-color: @base_color;
-  position: absolute;
-}
-.jd_sousuo .icon-bar{
-  width:20px;
-  height: 20px;
-  display: block;
-  margin: 12px 10px;
-  background-color: #0f0f0f;
-  position: absolute;
-}
 body{
   position: absolute;
   width: 100%;
   height: 100%;
   background: #ffffff;
 }
-
-/*返回按钮*/
-.jd_topbar .icon_back{
-  background-position: -20px 0;
-  width:20px;
-  height: 20px;
+.dingcen .backbutton{
+  width:5%;
+  height: 3%;
   display: block;
-  margin: 12px 10px;
+  margin: 1% 1%;
   position: absolute;
-  top:0;
-  left: 0;
+  left: 1%;
+  top:1%;
+
 }
 /*搜索输入框*/
-.jd_topbar form{
+.dingcen form{
   height: 44px;
   width: 100%;
   padding:0 40px;
+  margin: 0 auto;
 }
-.jd_topbar form input{
+.dingcen form input{
   width: 100%;
   height: 32px;
   border: 1px solid #bfbfbf;
-  border-radius: 4px;
+  border-radius: 2px;
   margin-top: 6px;
   padding-left: 10px;
 }
-/*菜单按钮*/
-.jd_topbar .icon_menu{
-  background-position: -60px 0;
-  width:20px;
-  height: 20px;
+.dingcen .caidanbutton{
+  width:5%;
+  height: 3%;
   display: block;
-  margin: 12px 10px;
-  background-clip: content-box;
-  background-origin: content-box;
-
+  margin: 1% 1%;
   position: absolute;
-  top:0;
-  right: 0;
+  right: 1%;
+  top:1%;
+}
+/*无序列表去圆点*/
+ul{
+  list-style-type: none;
+}
+/*分类大盒子*/
+.fenleihezi{
+  height: 100%;
+  width: 100%;
+  padding-top: 45px;
+  position: relative;
+}
+/*分裂左边盒子*/
+.fenleihezi_left{
+  width: 90px;
+  height: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: 999;
+}
+.fenleihezi_left .fenleihezi_left_box{
+  width: 90px;
+  top: 0px;;
+}
+.fenleihezi_left .fenleihezi_left_box ul li{
+  height: 50px;
+  width: 90px;
+  background: #f3f4f6;
+  font-size: auto;
+}
+.fenleihezi_left .fenleihezi_box ul li a{
+  height: 50px;
+  width: 90px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.fenleihezi_left .fenleihezi_left_box ul li.now{
+  background: #fff;
+}
+.fenleihezi_left .fenleihezi_left_box ul li.now a{
+  border-right: none;
+  color: #f15353;
+}
+/*分类右边盒子*/
+/*.fenleihezi_right{*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*padding-left: 90px;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*right:0;;*/
+/*overflow: hidden;*/
+/*}*/
+/*.fenleihezi_right .fenleihezi_right_box{*/
+/*padding: 10px 12px;*/
+/*}*/
+/*!*右侧分类大图*!*/
+/*.fenleiguanggaotu{*/
+/*width: 100%;*/
+/*height: auto;*/
+/*width: auto;*/
+
+/*}*/
+/*.fenleihezi_right .fenleihezi_right_box .fenleiguanggaotu a img{*/
+/*width: 100%;*/
+/*}*/
+/*!*分类*!*/
+/*.fenleihezi_right .fenleihezi_right_box .r_product{*/
+/*margin-top: 20px;*/
+/*font-size: 12px;*/
+/*}*/
+/*.fenleihezi_right .fenleihezi_right_box .r_product h3{*/
+/*color: #888;*/
+/*margin-bottom: 10px;*/
+/*}*/
+/*.fenleihezi_right .fenleihezi_right_box .r_product ul li{*/
+/*width: 33.333%;*/
+/*text-align: center;*/
+/*float: left;*/
+/*}*/
+
+/*.fenleihezi_right .fenleihezi_right_box .r_product ul li img{
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin:  0 auto;
+}.fenleihezi_right .fenleihezi_right_box .r_product ul li p{*/
+/*line-height: 30px;*/
+/*}*/
+
+.bigdiv{
+  min-width: 300px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/*}*/
+.youcehuodongtu{
+  width: 100%;
+  height: 100%;
+}
+.youceguanggaodiv{
+  position: absolute;
+  top: 20%;
+  width: 78%;
+  left: 22%;
+}
+.fenleihezi_right .fenleihezi_right_box .r_product ul li img{
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin:  0 auto;
+}
+.youcefenleixitu{
+  position: absolute;
+  left: 28%;
+  /*top:270%;*/
+  margin-top: 20%;
+}
+.youcefenleixitu  img{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  height:15%;
+  top:20%;
+
+}
+.youcefenleixitu p{
+  text-align: center;
+  color: rgba(0,0,0,0.8);
+}
+p{
+  color: rgba(0,0,0,0.77);
 }
