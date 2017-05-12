@@ -1,67 +1,58 @@
-body{
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+}
+.jd_sousuo .icon-bar {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 12px 10px;
+  background-color: #0f0f0f;
+  position: absolute;
+}
+body {
   position: absolute;
   width: 100%;
   height: 100%;
   background: #ffffff;
 }
-.dingcen .backbutton{
-  width:3%;
-  height: 3%;
+/*返回按钮*/
+.jd_topbar .icon_back {
+  background-position: -20px 0;
+  width: 20px;
+  height: 20px;
   display: block;
-  margin: 1% 1%;
+  margin: 12px 10px;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
 }
 /*搜索输入框*/
-.dingcen form{
+.jd_topbar form {
   height: 44px;
   width: 100%;
-  padding:0 40px;
+  padding: 0 40px;
 }
-.dingcen form input{
+.jd_topbar form input {
   width: 100%;
   height: 32px;
   border: 1px solid #bfbfbf;
-  border-radius: 2px;
+  border-radius: 4px;
   margin-top: 6px;
   padding-left: 10px;
 }
-.dingcen .caidanbutton{
-  width:3%;
-  height: 3%;
+/*菜单按钮*/
+.jd_topbar .icon_menu {
+  background-position: -60px 0;
+  width: 20px;
+  height: 20px;
   display: block;
-  margin: 1% 1%;
+  margin: 12px 10px;
+  background-clip: content-box;
+  background-origin: content-box;
   position: absolute;
   top: 0;
   right: 0;
-}
-/*无序列表去圆点*/
-ul{
-  list-style-type: none;
-}
-/*分类大盒子*/
-.fenleihezi{
-  height: 100%;
-  width: 100%;
-  padding-top: 45px;
-  position: relative;
-}
-/*分裂左边盒子*/
-.fenleihezi_left{
-  width: 90px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
-.fenleihezi_left .fenleihezi_left_box{
-  width: 90px;
-}
-.fenleihezi_left .fenleihezi_left_box ul li{
-  height: 50px;
-  width: 90px;
-  background: #f3f4f6;
-  font-size: 14px;
 }
