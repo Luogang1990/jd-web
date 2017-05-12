@@ -1,0 +1,17 @@
+{
+  "name": "project_demo",
+  "version": "1.0.0",
+  "description": "\"project_demo\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-load-plugins": "^1.5.0"
+  }
+}
