@@ -4,37 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
     <title>京东首页</title>
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery/dist/jquery-3.2.1.min.js"></script>
+    <script src="scripts/swiper-3.4.2.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="styles/lunboto.css"/>
     <link rel="stylesheet" href="../dist/css/index.css" />
+
 </head>
 <body>
 <div class="box">
-    <header class="header-top">
-        <div class="header-search">
-                <img src="../img/jd-logo.png" alt="#"/>
-                <input type="search" placeholder=" &nbsp &nbsp笔记本电脑"/>
-            <a href="#" class="login">登陆</a>
+    <div class="top">
+        <div class="header-search" id="header-search">
+        <img src="../img/logo.png" alt="#"/>
+        <input type="text" placeholder="笔记本电脑" />
+        <a href="#" class="login" style="color: white">登陆</a>
+    </div>
+    </div>
+    <!--轮播图-->
+ <div class="aaa">
+     <div class="swiper-container swiper-container-horizontal topview">
+         <div class="swiper-wrapper">
+             <div class="swiper-slide" >
+                 <img src="../img/11.jpg">
+             </div>
+             <div class="swiper-slide">
+                <img src="../img/13.jpg">
+             </div>
+             <div class="swiper-slide">
+                <img src="../img/15.jpg">
+             </div>
+             <div class="swiper-slide" >
+                <img src="../img/12.jpg">
+             </div>
+         </div>
+
+         <div class="swiper-pagination"></div>
+     </div>
+
+    </div>
+    <div class="nav">
+        <div class="aaa">
+            <div class="item " style="padding-left: 10px">
+                <a href="#"><img src="../img/nav.png" alt=""/></a>
+                <p><a href="#">分类查询</a></p>
+            </div>
+            <div class="item ">
+                <a href="#"><img src="../img/nav.png" alt=""/></a>
+                <p><a href="#">分类查询</a></p>
+            </div>
+            <div class="item ">
+                <a href="#"><img src="../img/nav.png" alt=""/></a>
+                <p><a href="#">分类查询</a></p>
+            </div>
+            <div class="item "style="padding-right: 10px">
+                <a href="#"><img src="../img/nav.png" alt=""/></a>
+                <p><a href="#">分类查询</a></p>
+            </div>
+
         </div>
-        <div class="banner">
-            <ul>
-                <li><img src="../img/l6.jpg" alt=""/></li>
-                <li><img src="../img/l6.jpg" alt=""/></li>
-                <li><img src="../img/l6.jpg" alt=""/></li>
-                <li><img src="../img/l6.jpg" alt=""/></li>
-                <li><img src="../img/l6.jpg" alt=""/></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="aaa">
+            <div class="item "style="padding-left: 10px">
+                <a href="#"><img src="../img/nav.png" alt=""/></a>
+                <p><a href="#">分类查询</a></p>
+            </div>
+            <div class="item ">
+                <a href="#"><img src="../img/nav.png" alt=""/></a>
+                <p><a href="#">分类查询</a></p>
+            </div>
+            <div class="item ">
+                <a href="#"><img src="../img/nav.png" alt=""/></a>
+                <p><a href="#">分类查询</a></p>
+            </div>
+            <div class="item " style="padding-right: 10px">
+                <a href="#"><img src="../img/nav.png" alt=""/></a>
+                <p><a href="#">分类查询</a></p>
+            </div>
         </div>
-    </header>
+
+    </div>
+    <div class="content">
+        <img src="../img/aish.png" alt="#" class="content-logo"/>
+        <div class="ssss" >
+            <div class="bbb">
+                <div class="content-shouji">
+                    <div class="ccc">
+                        <b><a href="#">玩3C</a></b><br/>
+                        <a href="#">坚果Pro</a><br/>
+                    </div>
+                    <div class="ddd">
+                        <a href="#"> <img src="../img/shouji.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="content-shouji">
+                    <div class="ccc">
+                        <b><a href="#">玩3C</a></b><br/>
+                        <a href="#">坚果Pro</a><br/>
+                    </div>
+                    <div class="ddd">
+                        <a href="#"> <img src="../img/shouji.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ssss" >
+            <div class="bbb">
+                <div class="content-shouji">
+                    <div class="ccc">
+                        <b><a href="#">玩3C</a></b><br/>
+                        <a href="#">坚果Pro</a><br/>
+                    </div>
+                    <div class="ddd">
+                        <a href="#"> <img src="../img/shouji.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="content-shouji">
+                    <div class="ccc">
+                        <b><a href="#">玩3C</a></b><br/>
+                        <a href="#">坚果Pro</a><br/>
+                    </div>
+                    <div class="ddd">
+                        <a href="#"> <img src="../img/shouji.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content"style="margin-top: -10px">
+        <img src="../img/aish.png" alt="#" class="content-logo"/>
+        <div class="ssss" >
+            <div class="bbb">
+                <div class="content-shouji">
+                    <div class="ccc">
+                        <b><a href="#">玩3C</a></b><br/>
+                        <a href="#">坚果Pro</a><br/>
+                    </div>
+                    <div class="ddd">
+                        <a href="#"> <img src="../img/shouji.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="content-shouji">
+                    <div class="ccc">
+                        <b><a href="#">玩3C</a></b><br/>
+                        <a href="#">坚果Pro</a><br/>
+                    </div>
+                    <div class="ddd">
+                        <a href="#"> <img src="../img/shouji.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ssss" >
+            <div class="bbb">
+                <div class="content-shouji">
+                    <div class="ccc">
+                        <b><a href="#">玩3C</a></b><br/>
+                        <a href="#">坚果Pro</a><br/>
+                    </div>
+                    <div class="ddd">
+                        <a href="#"> <img src="../img/shouji.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="content-shouji">
+                    <div class="ccc">
+                        <b><a href="#">玩3C</a></b><br/>
+                        <a href="#">坚果Pro</a><br/>
+                    </div>
+                    <div class="ddd">
+                        <a href="#"> <img src="../img/shouji.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+
+<script type="text/javascript">
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop:true,
+        autoplay : 3000,
+        paginationBulletRender: function (swiper, index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+    });
+
+</script>
 </body>
 </html>

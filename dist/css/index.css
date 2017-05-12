@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 body {
   background-color: #f3f3f3 ;
   font-size: 14px;
@@ -5,7 +8,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #000000;
 }
 ul li {
   list-style: none;
@@ -13,47 +16,152 @@ ul li {
 .box {
   min-width: 300px;
   max-width: 640px;
+  height: 2000px;
+  margin: auto;
+  position: relative;
+  background-color: white;
 }
 /*顶部搜索*/
-.header-search {
-  position: fixed;
+.top {
+  min-width: 300px;
+  max-width: 640px;
   width: 100%;
-  height: 30px;
-  margin-top: 6px;
-  left: 6%;
+  position: fixed;
   z-index: 999;
 }
-.header-search img {
-  margin-right: 6px;
+.top .header-search {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  margin-top: 6px;
+  left: 4%;
 }
-.header-search input {
-  width: 70%;
-  height: 30px;
+.top img {
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.top input {
+  width: 82%;
+  height: 25px;
   border-radius: 20px;
   border-style: none;
   font-size: 12px;
+  padding-left: 32px;
 }
-.header-search .login {
+.top .login {
   width: 10%;
-  margin-left: 6px;
+  margin-left: 4px;
 }
 /*轮播图*/
-.banner {
+.wrap {
+  max-width: 640px;
+  min-width: 300px;
   width: 100%;
-  overflow: hidden;
+  height: 285px;
   position: relative;
-}
-.banner ul:first-child {
-  width: 500%;
-}
-.banner ul:first-child li {
-  width: 20%;
+  overflow: hidden;
   float: left;
-  height: 300px;
-  background-color: #50ff97;
+  margin-bottom: -60px;
 }
-.banner ul:first-child li img {
-  width: 100%;
-  height: auto;
+.slidebox {
+  width: 400%;
+  position: absolute;
+  left: -38px;
+}
+.slidebox li {
+  float: left;
+  width: 25%;
+}
+.slidebox li img {
   display: block;
+  width: 100%;
+}
+.dot {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  text-align: right;
+  bottom: 10px;
+  left: 0;
+}
+.dot p {
+  margin-right: 42%;
+  margin-bottom: 4px;
+  margin-top: -80px;
+}
+.dot b {
+  width: 17px;
+  height: 17px;
+  border-radius: 20px;
+  color: #333;
+  display: inline-block;
+  border: 1px solid #fff;
+  background: #fff;
+  text-align: center;
+  line-height: 17px;
+  margin: 0 3px;
+  margin-top: 6px;
+  cursor: pointer;
+  font-weight: normal;
+}
+.dot .cur {
+  background: #F63;
+  color: #fff;
+  border: 1px solid #f63;
+}
+.nav {
+  padding-top: 20px;
+  width: 100%;
+}
+.nav .aaa {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.nav .aaa p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.content {
+  min-width: 300px;
+  max-width: 640px;
+  width: 100%;
+  padding-top: 10px;
+}
+.content .content-logo {
+  width: 100%;
+}
+.ssss {
+  display: flex;
+}
+.bbb {
+  width: 50%;
+  height: 140px;
+  border-bottom: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+.bbb .content-shouji {
+  position: relative;
+  padding-top: 10px;
+  margin-left: 18px;
+}
+.bbb .content-shouji .ccc {
+  float: left;
+}
+.bbb .content-shouji .ccc a:first-child {
+  margin-left: -8px;
+}
+.bbb .content-shouji .ddd {
+  float: right;
+  margin-right: 16px;
+}
+.bbb .content-shouji a {
+  font-size: 12px;
+}
+.bbb .sj {
+  position: absolute;
+  margin-left: 83px;
+  margin-top: -34px;
 }
