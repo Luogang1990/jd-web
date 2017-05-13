@@ -1,32 +1,297 @@
 //Craeted by wrb 2017-05-11 12:05:07
-body{
-  margin: 0px;
+
+@light-border1:1px solid #ddd;
+@light-border2:1px solid #eee;
+.align-center(@hight){
+  display: block;
+  line-height: @hight;
+  height: @hight;
+  width: 100%;
+  margin: 0px auto;
+}
+.box(@width:100%,@height:50px,@background:white){
+  width: @width;
+  height: @height;
+  background: @background;
+}
+.border(@width:1px,@line:solid,@color:red){
+  border:@arguments;
 }
 
+body{
+  margin: 0px;
+  background: #eee;
+}
+//返回&购物车&菜单
 #toolbar{
   width: 100%;
   height: 45px;
   background-color: #eeeeee;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-bottom: @light-border1;
   background-image: url("../../img/toolbar-background.png");
+  position: relative;
   #btn-back{
     background-image: url("../../img/btn-back.png");
-    float: left;
     height: 43px;
     width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
   }
   #headline{
     text-align: center;
+    .align-center(43px);
   }
   #btn-menu{
     background-image: url("../../img/btn-menu.png");
-    float: right;
     height: 43px;
     width: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+//菜单（隐藏）
+.display-block{
+  display: block;
+}
+.display-none{
+  display: none;
+}
+#cart-menu{
+  padding: 0;
+  background: #404040;
+  border: 1px solid #444;
+  display: none;
+  //ul{
+  //  .border();
+  //}
+  li{
+    width: 24%;
+    height: 100%;
+    text-align: center;
+    font-size: larger;
+    color: #eee;
+    //.border();
+    img{
+      margin-top: 5px;
+      width: 40%;
+    }
+  }
+}
+//登录
+#cart-login{
+  background: #fff;
+  border-bottom: @light-border2;
+  height: 75px;
+  padding-top: 15px;
+  #cart-login-center{
+    img{
+      display: inline-block;
+    }
+    p{
+      display: inline-block;
+      color: #bbb;
+    }
+    #cart-btn-login{
+      background: #e00;
+      width: 60px;
+      height: 20px;
+      border-radius: 3px;
+      text-align: center;
+      color: white;
+      display: inline-block;
+    }
+  }
+}
+//每日神券&我的关注
+#guide{
+  background: #fff;
+  h4,p{
+    text-align: right;
+  }
+  h4{
+    color: #e00;
+    font-size: 16px;
+  }
+  p{
+    color: #ccc;
+  }
+  #guide01{
+    background-image: url("../../img/act.coupon.png");
+    background-size: 80px;
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 49%;
+    display: inline-block;
+    border-right: @light-border2;
+    padding: 8px;
+  }
+  #guide02{
+    background-image: url("../../img/act.secskll.png");
+    background-size: 80px;
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 49%;
+    display: inline-block;
+    padding: 8px;
+  }
+}
+//京东秒杀
+#miaosha-headline{
+  height: 42px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  hr{
+    position: absolute;
+    background-color: #ccc;
+    width: 97%;
+    height: 1px;
+    left: 1.5%;
+    z-index: -1;
+  }
+  #miaosha-center{
+    width: 100px;
+    display: inline-block;
+    line-height: 40px;
+    background: #eee;
+    img{
+      display: inline;
+    }
+    span{
+      display: inline;
+    }
   }
 }
 
-.gradual(@color){
-  background-color: @color;
+#miaosha-container{
+  width: 100%;
+  background: white;
+  padding: 3px;
+
+  //.border();/*test*/
+  #maiocha-container-headline{
+    //.border();/*test*/
+    #miaosha-timer{
+      //.border();
+    }
+    #miaosha-more{
+      //.border();
+      right: 3px;
+      position: absolute;
+      height: 20px;
+      span{
+        color: #e00;
+      }
+      img{
+        height: 100%;
+      }
+    }
+  }
+}
+.miaosha-products{
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 32%;
+  img{
+    display: block;
+    width: 100%;
+  }
+  strong{
+    display: block;
+    text-align: center;
+  }
+  del{
+    display: block;
+    text-align: center;
+  }
+}
+.timer-box{
+  width: 20px;
+  height: 20px;
+  background: #222;
+  color: #eee;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+//看看热卖
+#remai-headline{
+  height: 42px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  hr{
+    position: absolute;
+    background-color: #ccc;
+    width: 97%;
+    height: 1px;
+    left: 1.5%;
+    z-index: -1;
+  }
+  #remai-center{
+    width: 100px;
+    display: inline-block;
+    line-height: 40px;
+    background: #eee;
+    img{
+      display: inline;
+    }
+    span{
+      display: inline;
+    }
+  }
+}
+#remai-container{
+  width: 100%;
+  //.border();/*test*/
+}
+.remai-products{
+  margin-bottom: 1.7%;
+  width: 49%;
+  background: white;
+  display: inline-block;
+  float: left;
+  img{
+    width: 100%;
+  }
+  span:first-of-type{
+    color: #d00;
+  }
+  p{
+    margin: 2px;
+  }
+  span:last-of-type{
+    font-size: small;
+    margin-right: 3px;
+    float: right;
+  }
+  button{
+    float: right;
+    margin-right: 8px;
+    background: white;
+    border: @light-border1;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    img{
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.remai-products-right{
+  float: right;
+}
+//没有更多了
+#no-more{
+  width: 100%;
+  text-align: center;
+  img{
+    height: 40px;
+  }
+  p{
+    color: #bbb;
+  }
 }
