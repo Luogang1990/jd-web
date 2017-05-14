@@ -1,26 +1,258 @@
 body {
   margin: 0px;
+  background: #eee;
 }
 #toolbar {
   width: 100%;
   height: 45px;
   background-color: #eeeeee;
-  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-image: url("../../img/toolbar-background.png");
+  position: relative;
 }
 #toolbar #btn-back {
   background-image: url("../../img/btn-back.png");
-  float: left;
   height: 43px;
   width: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 #toolbar #headline {
   text-align: center;
+  display: block;
+  line-height: 43px;
+  height: 43px;
+  width: 100%;
+  margin: 0px auto;
 }
 #toolbar #btn-menu {
   background-image: url("../../img/btn-menu.png");
-  float: right;
   height: 43px;
   width: 50px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.display-block {
+  display: block;
+}
+.display-none {
+  display: none;
+}
+#cart-menu {
+  padding: 0;
+  background: #404040;
+  border: 1px solid #444;
+  display: none;
+}
+#cart-menu li {
+  width: 24%;
+  height: 100%;
+  text-align: center;
+  font-size: larger;
+  color: #eee;
+}
+#cart-menu li img {
+  margin-top: 5px;
+  width: 40%;
+}
+#cart-login {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  height: 75px;
+  padding-top: 15px;
+}
+#cart-login #cart-login-center img {
+  display: inline-block;
+}
+#cart-login #cart-login-center p {
+  display: inline-block;
+  color: #bbb;
+}
+#cart-login #cart-login-center #cart-btn-login {
+  background: #e00;
+  width: 60px;
+  height: 20px;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
+#guide {
+  background: #fff;
+}
+#guide h4,
+#guide p {
+  text-align: right;
+}
+#guide h4 {
+  color: #e00;
+  font-size: 16px;
+}
+#guide p {
+  color: #ccc;
+}
+#guide #guide01 {
+  background-image: url("../../img/act.coupon.png");
+  background-size: 80px;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 49%;
+  display: inline-block;
+  border-right: 1px solid #eee;
+  padding: 8px;
+}
+#guide #guide02 {
+  background-image: url("../../img/act.secskll.png");
+  background-size: 80px;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 49%;
+  display: inline-block;
+  padding: 8px;
+}
+#miaosha-headline {
+  height: 42px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#miaosha-headline hr {
+  position: absolute;
+  background-color: #ccc;
+  width: 97%;
+  height: 1px;
+  left: 1.5%;
+  z-index: -1;
+}
+#miaosha-headline #miaosha-center {
+  width: 100px;
+  display: inline-block;
+  line-height: 40px;
+  background: #eee;
+}
+#miaosha-headline #miaosha-center img {
+  display: inline;
+}
+#miaosha-headline #miaosha-center span {
+  display: inline;
+}
+#miaosha-container {
+  width: 100%;
+  background: white;
+  padding: 3px;
+}
+#miaosha-container #maiocha-container-headline #miaosha-more {
+  right: 3px;
+  position: absolute;
+  height: 20px;
+}
+#miaosha-container #maiocha-container-headline #miaosha-more span {
+  color: #e00;
+}
+#miaosha-container #maiocha-container-headline #miaosha-more img {
+  height: 100%;
+}
+.miaosha-products {
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 32%;
+}
+.miaosha-products img {
+  display: block;
+  width: 100%;
+}
+.miaosha-products strong {
+  display: block;
+  text-align: center;
+}
+.miaosha-products del {
+  display: block;
+  text-align: center;
+}
+.timer-box {
+  width: 20px;
+  height: 20px;
+  background: #222;
+  color: #eee;
+  border-radius: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+#remai-headline {
+  height: 42px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+#remai-headline hr {
+  position: absolute;
+  background-color: #ccc;
+  width: 97%;
+  height: 1px;
+  left: 1.5%;
+  z-index: -1;
+}
+#remai-headline #remai-center {
+  width: 100px;
+  display: inline-block;
+  line-height: 40px;
+  background: #eee;
+}
+#remai-headline #remai-center img {
+  display: inline;
+}
+#remai-headline #remai-center span {
+  display: inline;
+}
+#remai-container {
+  width: 100%;
+}
+.remai-products {
+  margin-bottom: 1.7%;
+  width: 49%;
+  background: white;
+  display: inline-block;
+  float: left;
+}
+.remai-products img {
+  width: 100%;
+}
+.remai-products span:first-of-type {
+  color: #d00;
+}
+.remai-products p {
+  margin: 2px;
+}
+.remai-products span:last-of-type {
+  font-size: small;
+  margin-right: 3px;
+  float: right;
+}
+.remai-products button {
+  float: right;
+  margin-right: 8px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+.remai-products button img {
+  width: 16px;
+  height: 16px;
+}
+.remai-products-right {
+  float: right;
+}
+#no-more {
+  width: 100%;
+  text-align: center;
+}
+#no-more img {
+  height: 40px;
+}
+#no-more p {
+  color: #bbb;
 }
