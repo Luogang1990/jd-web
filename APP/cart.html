@@ -10,14 +10,164 @@
     <link rel="stylesheet" href="../dist/css/cart.css" />
 </head>
 <body>
+    <!--返回&购物车&菜单-->
     <div id="toolbar">
-        <div id="btn-back">
-
-        </div>
-        <h3 id="headline">购物车</h3>
-        <div id="btn-menu">
-
+        <div><a href="index.html" id="btn-back"></a></div>
+        <h4 id="headline">购物车</h4>
+        <div id="btn-menu"></div>
+    </div>
+    <!--菜单-->
+    <div id="cart-menu" class="display-none">
+        <ul class="list-unstyled list-inline">
+            <li><img src="../img/menu-01.png"><br> <a href="index.html" style="color: white">首页</a></li>
+            <li><img src="../img/menu-02.png"><br><a href="分类.html"  style="color: white" >分类搜索</a></li>
+            <li style="background-color: #2d2d2d;border-radius: 10px"><img src="../img/menu-03.png"><br><a href="#" style="color: white">购物车</a></li>
+            <li><img src="../img/menu-04.png"><br>我的京东</li>
+        </ul>
+    </div>
+    <!--登录-->
+    <div id="cart-login">
+        <div id="cart-login-center" class="text-center">
+            <img src="../img/cart-logo.png">
+           <P>登录后可同步电脑与手机购物车</P>
+           <div id="cart-btn-login">登录</div>
         </div>
     </div>
+    <!--每日神券&我的关注-->
+    <div id="guide">
+        <div id="guide01">
+            <h4>每日神券</h4>
+            <p>限量发放，快去抢</p>
+        </div>
+        <div id="guide02">
+            <h4>我的关注</h4>
+            <p>你关心的都在这里</p>
+        </div>
+    </div>
+    <!--京东秒杀-->
+    <div id="miaosha-headline">
+        <hr>
+        <div id="miaosha-center">
+            <img src="../img/clock.png">
+            <span>京东秒杀</span>
+        </div>
+    </div>
+    <div id="miaosha-container">
+        <div id="maiocha-container-headline">
+            <span id="miaosha-timer">
+                <strong id="timer-title"><span id="timer-box0">16</span>点场</strong>
+                <strong id="timer-box1" class="timer-box">00</strong>
+                <strong>:</strong>
+                <strong id="timer-box2" class="timer-box">59</strong>
+                <strong>:</strong>
+                <strong id="timer-box3" class="timer-box">59</strong>
+            </span>
+            <label id="miaosha-more">
+                <span>更多</span>
+                <img src="../img/miaosha-more.png">
+            </label>
+        </div>
+
+        <div id="miaosha-products">
+            <div class="miaosha-products">
+                <img src="../img/风扇.jpg">
+                <strong><small>￥</small>998</strong>
+                <del><small>￥</small>8888</del>
+            </div>
+            <div class="miaosha-products">
+                <img src="../img/电脑.jpg">
+                <strong><small>￥</small>6666</strong>
+                <del><small>￥</small>18000</del>
+            </div>
+            <div class="miaosha-products">
+                <img src="../img/男鞋.jpg">
+                <strong><small>￥</small>233</strong>
+                <del><small>￥</small>1800</del>
+            </div>
+            <div class="miaosha-products">
+                <img src="../img/奶粉.jpg">
+                <strong><small>￥</small>587</strong>
+                <del><small>￥</small>999</del>
+            </div>
+            <div class="miaosha-products">
+                <img src="../img/手机.jpg">
+                <strong><small>￥</small>998</strong>
+                <del><small>￥</small>18000</del>
+            </div>
+            <div class="miaosha-products">
+                <img src="../img/书籍.jpg">
+                <strong><small>￥</small>8</strong>
+                <del><small>￥</small>180</del>
+            </div>
+        </div>
+    </div>
+    <!--看看热卖-->
+    <div id="remai-headline">
+        <hr>
+        <div id="remai-center">
+            <img src="../img/remai.png">
+            <span>看看热卖</span>
+        </div>
+    </div>
+    <div id="remai-container">
+        <div class="remai-products">
+            <img src="../img/裤子.jpg">
+            <p>穿这裤子脱不掉剁手买它个bk的紫薯布丁</p>
+            <span><small>￥</small><strong>39</strong><small>.00</small></span>
+            <span>10086条评论</span>
+            <div>
+                <button class="put-in-cart"><img src="../img/cart-logo-mini.png"></button>
+                <button class="xiangsi">看相似</button>
+            </div>
+        </div>
+        <div class="remai-products remai-products-right">
+            <img src="../img/家具.jpg">
+            <p>用这家具能镭射剁手买它个bk的紫薯布丁</p>
+            <span><small>￥</small><strong>15</strong><small>.00</small></span>
+            <span>10010条评论</span>
+            <div>
+                <button class="put-in-cart"><img src="../img/cart-logo-mini.png"></button>
+                <button class="xiangsi">看相似</button>
+            </div>
+        </div>
+        <div class="remai-products">
+            <img src="../img/高跟鞋2.jpg">
+            <p>穿这鞋子能镭射剁手买它个bk的紫薯布丁</p>
+            <span><small>￥</small><strong>39</strong><small>.00</small></span>
+            <span>10086条评论</span>
+            <div>
+                <button class="put-in-cart"><img src="../img/cart-logo-mini.png"></button>
+                <button class="xiangsi">看相似</button>
+            </div>
+        </div>
+        <div class="remai-products remai-products-right">
+            <img src="../img/纸巾.jpg">
+            <p>用这纸巾擦不破剁手买它个bk的紫薯布丁</p>
+            <span><small>￥</small><strong>15</strong><small>.00</small></span>
+            <span>10010条评论</span>
+            <div>
+                <button class="put-in-cart"><img src="../img/cart-logo-mini.png"></button>
+                <button class="xiangsi">看相似</button>
+            </div>
+        </div>
+    </div>
+    <!--没有更多了-->
+    <div id="no-more">
+        <img src="../img/no-more.png">
+        <p>再怎么滑也没有更多了啦</p>
+    </div>
+<script>
+    $("#btn-menu").click(function () {
+        $("#cart-menu").toggle(10,function () {
+        });
+    });
+//    var myDate = new Date();
+//    var hour = myDate.getHours();
+//    var minute = myDate.getMinutes();
+//    var second = myDate.getSeconds();
+////    var hour01 = $("#timer-box0") = "20df";
+////    console.log($("#timer-box0").innerText);
+
+</script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 body {
   background-color: #f3f3f3 ;
   font-size: 14px;
@@ -5,7 +8,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #000000;
 }
 ul li {
   list-style: none;
@@ -13,47 +16,143 @@ ul li {
 .box {
   min-width: 300px;
   max-width: 640px;
+  margin: auto;
+  position: relative;
+  background-color: white;
 }
 /*顶部搜索*/
-.header-search {
-  position: fixed;
+.top {
+  min-width: 300px;
+  max-width: 640px;
+  height: 40px;
   width: 100%;
-  height: 30px;
-  margin-top: 6px;
-  left: 6%;
+  position: fixed;
   z-index: 999;
 }
-.header-search img {
-  margin-right: 6px;
+.top .header-search {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  padding-top: 8px;
+  left: 4%;
 }
-.header-search input {
-  width: 70%;
-  height: 30px;
-  border-radius: 20px;
+.top img {
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.top input {
+  width: 82%;
+  height: 25px;
+  border-radius: 25px;
   border-style: none;
   font-size: 12px;
+  padding-left: 32px;
 }
-.header-search .login {
+.top .login {
   width: 10%;
-  margin-left: 6px;
+  margin-left: 4px;
 }
-/*轮播图*/
-.banner {
+.top-bgc {
+  background-color: #ff0000;
+}
+.nav {
+  padding-top: 20px;
   width: 100%;
-  overflow: hidden;
+}
+.nav .aaa {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.nav .aaa p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.content {
+  min-width: 300px;
+  max-width: 640px;
+  width: 100%;
+  padding-top: 10px;
+}
+.content .content-logo {
+  width: 100%;
+}
+.ssss {
+  display: flex;
+}
+.bbb {
+  width: 50%;
+  height: 140px;
+  border-bottom: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+.bbb .content-shouji {
   position: relative;
+  padding-top: 10px;
+  margin-left: 18px;
 }
-.banner ul:first-child {
-  width: 500%;
-}
-.banner ul:first-child li {
-  width: 20%;
+.bbb .content-shouji .ccc {
   float: left;
-  height: 300px;
-  background-color: #50ff97;
 }
-.banner ul:first-child li img {
+.bbb .content-shouji .ccc a:first-child {
+  margin-left: -8px;
+}
+.bbb .content-shouji .ddd {
+  float: right;
+  margin-right: 16px;
+}
+.bbb .content-shouji a {
+  font-size: 12px;
+}
+.bbb .sj {
+  position: absolute;
+  margin-left: 83px;
+  margin-top: -34px;
+}
+/*底部*/
+.footer {
   width: 100%;
-  height: auto;
-  display: block;
+}
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 10px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.footer .footer-top p {
+  margin: 10px 20px;
+  float: left;
+}
+.footer .footer-bottom {
+  width: 100%;
+  height: 36px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+/*底部固定栏*/
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 640px;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #dcdcdc;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+}
+.bottom div {
+  float: left;
+  font-size: 12px;
+  margin: 0 12px;
+  padding-top: 8px;
+}
+.bottom div img {
+  width: 80%;
+  height: 50%;
 }
